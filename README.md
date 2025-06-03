@@ -72,13 +72,7 @@ Waridhania As Syifa      (G1A023075)
 
 | No | Lokasi Populer (Patokan)     |
 | -- | ---------------------------- |
-| 1  | Kampus 1 Universitas Dehasen |
-| 2  | SDIT Rabbani                 |
-| 3  | SMA Negeri 5 Bengkulu        |
-| 4  | Belakang RRI Bengkulu        |
 | 5  | SD Negeri 5 Kota Bengkulu    |
-| 6  | RSUD M. Yunus Bengkulu       |
-| 7  | Perumahan Bentiring Permai   |
 | 8  | Pantai Panjang               |
 | 9  | SMPN 07 Kota Bengkulu        |
 | 10 | Pasar Panorama               |
@@ -94,6 +88,50 @@ Waridhania As Syifa      (G1A023075)
 ## ⚙️ Alur Sistem
 
 <img src="https://raw.githubusercontent.com/username/repo-name/main/assets/alur-sistem.png" alt="Alur Sistem Smart City" width="100%" />
+
+---
+
+Berikut versi **rapi dan ringkas** dari penjelasan tadi, yang cocok dimasukkan ke dalam file `README.md` proyek kamu:
+
+---
+
+## 📊 Evaluasi Performa Sistem Prediksi Kemacetan
+
+### 🔍 Deskripsi Pengujian
+
+Kami melakukan percobaan sebanyak **5 kali** dengan lokasi peta yang berbeda-beda (Map 1 hingga Map 5) untuk mengevaluasi performa sistem prediksi kemacetan berbasis AI. Setiap percobaan mengukur waktu eksekusi dari awal pemuatan peta hingga seluruh fitur aktif sepenuhnya.
+
+
+---
+
+### ✅ Strategi Evaluasi Model
+
+Evaluasi dilakukan dengan pendekatan kuantitatif menggunakan:
+
+* **Waktu Eksekusi Total (Total Execution Time / TET)**
+* **Rata-rata Waktu Eksekusi (Mean Execution Time / MET)**
+* **Indeks Performa Relatif (Relative Performance Index / RPI)**
+
+Strategi ini bertujuan untuk:
+
+* Menilai efisiensi sistem dari sisi waktu respons.
+* Membandingkan efektivitas tampilan peta dalam memuat data kemacetan.
+* Mengidentifikasi variasi peta yang optimal untuk pengembangan final.
+
+---
+
+### 📈 Hasil Evaluasi
+
+| Map   | Total Waktu Eksekusi (detik) | RPI (%)       |
+| ----- | ---------------------------- | ------------- |
+| Map 1 | 206.18                       | -27.26%       |
+| Map 2 | 153.73                       | +5.12%        |
+| Map 3 | 156.09                       | +3.67%        |
+| Map 4 | **141.69**                   | **+12.57%** ✅ |
+| Map 5 | 156.44                       | +3.45%        |
+
+* **MET (Mean Execution Time):** `162.03 detik`
+* **Map 4** memberikan performa terbaik dan direkomendasikan sebagai dasar pengembangan.
 
 ---
 
